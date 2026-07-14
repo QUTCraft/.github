@@ -1,2 +1,3 @@
-# .github
-Organization profile and community health files for QUTC.
+# QUTCraft GitHub configuration
+
+TODO: Describe the purpose and maintenance rules of this repository.

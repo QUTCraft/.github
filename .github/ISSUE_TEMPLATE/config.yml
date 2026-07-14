@@ -1,2 +1,8 @@
 blank_issues_enabled: false
-contact_links: [] # TODO: Add support and private security-reporting links.
+contact_links:
+  - name: 安全漏洞
+    url: https://github.com/QUTCraft/.github/blob/main/SECURITY.md
+    about: 安全问题请勿通过公开 Issue 报告
+  - name: 获取帮助
+    url: https://github.com/QUTCraft/.github/blob/main/SUPPORT.md
+    about: 提交 Issue 前请先阅读支持说明

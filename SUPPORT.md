@@ -1,3 +1,24 @@
-# Support
+# 获取帮助
 
-TODO: Explain where users should ask questions, request features, and report problems.
+## 使用问题
+
+如果你在使用 QUTC 项目时遇到问题：
+
+1. 阅读项目 README 和文档。
+2. 搜索是否已经有相同 Issue。
+3. 确认问题可以稳定复现。
+4. 使用对应的 Bug Issue 模板提交问题。
+
+## 功能建议
+
+新功能建议请使用 Feature Request 模板。
+
+较大功能应先讨论需求和设计，不建议直接提交大型 Pull Request。
+
+## 安全问题
+
+安全漏洞不要公开提交 Issue，请阅读 `SECURITY.md`。
+
+## 社团内部事务
+
+成员信息、组织管理和内部账号问题不应提交到公开仓库，请通过社团内部渠道处理。

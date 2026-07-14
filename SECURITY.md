@@ -1,10 +1,48 @@
-# Security Policy
+# 安全政策
 
-TODO: Describe supported versions and a private vulnerability reporting method.
+QUTC 重视平台、成员数据和基础设施的安全。
 
-## Reporting a vulnerability
+## 报告安全问题
 
-TODO
-## Response process
+请不要通过公开 Issue 报告以下问题：
 
-TODO
+- 身份认证绕过
+- 权限提升
+- 敏感数据泄露
+- SQL 注入
+- 跨站脚本攻击
+- 服务器配置泄露
+- API Token 或其他凭据泄露
+- 可以影响成员账户或生产服务的问题
+
+请通过以下方式私下联系我们：
+
+- 安全邮箱：qutcraft@qq.com
+- GitHub Private Vulnerability Reporting：如果目标仓库已启用
+
+报告中请尽量包含：
+
+1. 受影响的仓库、版本或接口
+2. 问题描述
+3. 复现步骤
+4. 可能的影响
+5. 可行的修复建议
+6. 必要的截图或日志
+
+请在提交日志前删除密码、Token、Cookie、个人信息和真实用户数据。
+
+## 响应流程
+
+维护团队将：
+
+1. 确认收到报告
+2. 评估影响范围
+3. 制定修复方案
+4. 在修复完成后通知报告者
+5. 必要时发布安全公告
+
+## 支持版本
+
+项目正式发布前，仅维护默认分支上的最新代码。
+
+正式发布后，本节将列出仍然接受安全更新的版本。

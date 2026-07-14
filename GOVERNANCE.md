@@ -1,14 +1,70 @@
-# Governance
+# 项目治理
 
-TODO: Document project roles, decision-making, permissions, and handover rules.
+## 角色
 
-## Roles
+### Organization Owner
 
-TODO
-## Decision process
+负责：
 
-TODO
+- GitHub 组织安全
+- 成员和团队权限
+- 仓库创建与归档
+- 重大安全事件
+- 维护组织级规则
 
-## Permissions and handover
+Owner 权限应只授予少数长期负责且可信的成员。
 
-TODO
+### Maintainer
+
+负责：
+
+- 维护项目路线
+- 管理 Issue 和里程碑
+- 评审 Pull Request
+- 发布版本
+- 处理贡献者问题
+
+### Contributor
+
+负责：
+
+- 提交 Issue
+- 参与设计讨论
+- 实现功能和修复
+- 编写测试与文档
+- 遵守贡献指南和行为准则
+
+## 决策流程
+
+小型修改通过 Issue 和 Pull Request 讨论。
+
+涉及以下内容的重大修改，应先建立 RFC 或设计 Issue：
+
+- 权限模型
+- 数据库核心结构
+- 插件 API
+- 对外 API 的破坏性修改
+- 身份认证方式
+- 部署架构
+- 成员隐私数据处理
+
+## 合并权限
+
+默认分支的修改应通过 Pull Request 完成。
+
+合并需要：
+
+- CI 检查通过
+- 至少一名维护者批准
+- 所有阻塞性评审意见已解决
+- 不包含敏感信息
+
+## 权限交接
+
+成员离任时，应及时：
+
+- 移除不再需要的仓库权限
+- 撤销部署凭据
+- 轮换共享密钥
+- 转移负责中的 Issue 和项目
+- 补充必要的交接文档

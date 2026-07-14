@@ -1,25 +1,92 @@
-name: Bug report
-description: Report a reproducible problem
-title: "[Bug]: "
+name: Bug 报告
+description: 报告可以稳定复现的功能问题
+title: "[Bug] "
 body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你报告问题。提交前请搜索是否已经存在相同 Issue。
+        请勿提交密码、Token、Cookie、个人信息或真实用户数据。
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 影响范围
+      options:
+        - 官网
+        - 管理后台
+        - Go API
+        - 登录与权限
+        - 成员管理
+        - 项目管理
+        - 部署与运维
+        - 文档
+        - 其他
+    validations:
+      required: true
+
   - type: textarea
     id: description
     attributes:
-      label: Problem description
-      description: "TODO: Adjust this prompt for the project."
+      label: 问题描述
+      description: 请清楚描述实际发生了什么
+      placeholder: 实际行为是什么？
     validations:
       required: true
+
   - type: textarea
-    id: reproduction
+    id: expected
     attributes:
-      label: Reproduction steps
-      description: "TODO: Adjust this prompt for the project."
+      label: 预期行为
+      description: 你原本期望发生什么？
     validations:
       required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 输入……
+        4. 出现……
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交
+      description: 例如 v0.1.0 或 commit SHA
+
   - type: textarea
     id: environment
     attributes:
-      label: Environment
-      description: "TODO: List the required environment details."
+      label: 环境信息
+      placeholder: |
+        操作系统：
+        浏览器：
+        部署方式：
+        其他相关信息：
     validations:
       required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图
+      description: 请删除所有密码、Token、Cookie 和个人信息
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我已经搜索过现有 Issue
+          required: true
+        - label: 我已经删除日志中的敏感信息
+          required: true
+        - label: 这不是需要私密报告的安全漏洞
+          required: true
